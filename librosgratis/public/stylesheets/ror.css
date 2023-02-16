@@ -1,0 +1,72 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "area1_cont area2_cont";
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+}
+
+.contender_descripcion{
+    grid-area: area1_cont;
+    display: grid;
+    grid-template-areas: "area1 area1"
+                         "area2 area3"
+                         "area4 area4";
+
+}
+
+#titule_content{
+    grid-area: area1;
+    height: fit-content;
+}
+
+#image_select {
+    grid-area: area2;
+    text-align: center;
+}
+
+#resumen {
+    grid-area: area3;
+}
+
+#fecha_publi {
+    grid-area: area4;
+    text-align: end;
+}
+
+.text_descrip{
+    font-size: small;
+}
+
+#final_descrip{
+    margin-top: 1rem;
+}
+
+a{
+    color: blue;
+}
+
+.contenedor_derecho{
+    grid-area: area2_cont;
+}
+
+.conteneder_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}

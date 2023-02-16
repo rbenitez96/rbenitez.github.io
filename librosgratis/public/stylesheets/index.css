@@ -1,0 +1,75 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+#header2 {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+
+#subheader_title{
+    margin: 10px;
+}
+
+#header_images{
+    display: grid;
+    grid-template-areas: "area1 area2 area3 area4";
+    margin: 10px;
+}
+
+#subheader { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#contenedor_images { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#uno {
+    grid-area: area1;
+}
+
+#dos {
+    grid-area: area2;
+}
+
+#tres {
+    grid-area: area3;
+}
+
+#cuatro {
+    grid-area: area4;
+}
+
+#url_librogratis{
+    font-weight: bold;;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    color: blue;
+}
